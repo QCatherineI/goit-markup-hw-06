@@ -60,6 +60,10 @@ color: #434455;
 .header-contacts-link:hover {
     color: #404BBF;
 }
+
+.header-contacts-link:focus {
+    color: #404BBF;
+}
 /* Hero */
 
 .hero-title {
