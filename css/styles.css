@@ -180,6 +180,7 @@ text-transform: capitalize;
 .portfolio-item {
 }
 .portfolio-image {
+    background-color: #FFFFFF;
 }
 
 .portfolio-subtitle {
