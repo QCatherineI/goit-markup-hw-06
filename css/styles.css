@@ -45,12 +45,7 @@ color: #434455;
 .header-menu-link:hover {
     color: #404BBF;
 }
-.header-menu-link:active {
-    color: #404BBF;
-}
-.header-contacts-link:hover {
-    color: #404BBF;
-}
+
 .header-menu-link:focus {
     color: #404BBF;
 }
@@ -60,6 +55,10 @@ color: #434455;
 }
 .header-contacts {
     font-style: normal;
+}
+
+.header-contacts-link:hover {
+    color: #404BBF;
 }
 /* Hero */
 
@@ -116,7 +115,7 @@ color: #434455;
 }
 
 .team {
-    background-color: #FFFFFF ;
+    background-color: #F4F4FD;
 }
 .title-team {
     text-transform: capitalize;
