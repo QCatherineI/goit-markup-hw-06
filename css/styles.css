@@ -174,21 +174,24 @@ padding: 188px 0;
 }
 
 .hero-btn-main {
-font-weight: 500;
-font-size: 16px;
-line-height: 1.5;
-letter-spacing: 0.04em;
-background-color: #4D5AE5;
-color: #fff;
-cursor: pointer;
-display: block;
-border: none;
-border-radius: 4px;
-height: 56px;
-margin-top: 48px;
-margin-left: auto;
-margin-right: auto;
-min-width: 169px;
+    display: block;
+    margin: 0 auto;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: row;
+    gap: 10px;
+    background-color: #4d5ae5;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+    color: #fff;
+    min-width: 169px;
+    height: 56px;
+    border: none;
+    border-radius: 4px;
+    font-family: "Roboto", sans-serif;
+    cursor: pointer;
 }
 
 .hero-btn-main:hover {
@@ -273,8 +276,7 @@ margin-bottom: 72px;
 }
 .team-item {
     background-color: #FFFFFF;
-    width: calc((100% - 72px) / 4);
-    border-radius: 0px 0px 4px 4px;
+    width: calc((100% - 72px) / 4); 
 }
 
 .name-proff {
