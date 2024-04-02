@@ -93,6 +93,7 @@ font-size: 16px;
 line-height: 1.5;
 letter-spacing: 0.02em;
 color: #2e2f42;
+padding: 24px 0;
 }
 
 .header-contacts-list {
@@ -161,8 +162,7 @@ padding: 188px 0;
 
 .hero {
     background-color: #2e2f42;
-    width: 1440px;
-    height: 600px;
+    padding: 188px 0;
 }
 
 .hero-wrapper {
@@ -227,8 +227,7 @@ min-width: 169px;
     align-items: flex-start;
     justify-content: flex-start;
     flex-direction: column;
-    gap: 8px;
-    width: calc((100% - 72px) / 4); 
+    gap: 8px; 
 }
 
 .features-subtitle {
@@ -308,6 +307,7 @@ text-align: center;
 color: #434455;
 
 }
+
 .portfolio-container {
     border-bottom: 1px solid #e7e9fc;
         border-left: 1px solid #e7e9fc;
@@ -337,6 +337,7 @@ margin-bottom: 72px;
     flex-wrap: wrap;
     column-gap: 24px; 
     row-gap: 48px;
+    
     
 }
 
