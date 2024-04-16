@@ -95,8 +95,24 @@ font-size: 16px;
 line-height: 1.5;
 letter-spacing: 0.02em;
 color: #2e2f42;
-padding: 24px 0;
 }
+
+.current {
+    color: #404BBF;
+}
+
+.current::after {
+position: absolute;
+display: block;
+content: "";
+width: 100%;
+bottom: -1px;
+border-radius: 2px;
+height: 4px;
+}
+
+
+
 
 .header-contacts-list {
 display: flex;
@@ -113,7 +129,9 @@ font-size: 16px;
 line-height: 1.5;
 letter-spacing: 0.02em;
 color: #434455;
+transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+
 .header-menu-link:hover {
     color: #404BBF;
 }
@@ -136,10 +154,9 @@ color: #434455;
 .header-contacts-link:focus {
     color: #404BBF;
 }
+
+
 /* Hero */
-
-
-
 
 .hero-title {
 font-weight: 700;
@@ -173,7 +190,7 @@ display: block;
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    
+    max-width: 1440px;
 }
 
 .hero-wrapper {
@@ -326,6 +343,15 @@ margin-bottom: 72px;
     border-radius: 0px 0px 4px 4px;  
     background-color: #F4F4FD;
 }
+
+.team-item-first-section {
+    background-color: #fff;
+    border-radius: 0, 0, 4px, 4px;
+    box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08),
+    0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
+}
+
+
 
 .name-proff {
 border-radius: 0 0 4px 4px;
@@ -514,6 +540,11 @@ max-width: 264px;
     align-items: baseline;
     margin: 0 auto;
     max-width: 1158px;
+    margin-right: 120px;
+}
+
+.footer-social-media {
+    margin-right: 120px;
 }
 
 .footer-media-title {
