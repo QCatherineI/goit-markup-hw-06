@@ -51,6 +51,7 @@ address {
     border-bottom: 1px solid #e7e9fc;
     padding: 0 15px;
     box-shadow: 0px 2px 1px rgba(46,47,66, 0.08), 0px 1px 1px rgba(46,47,66, 0.16), 0px 1px 6px rgba(46,47,66, 0.08);
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .header-container {
@@ -344,7 +345,7 @@ margin-bottom: 72px;
     
     display: flex;
     gap: 24px; 
-    border-radius:  0px 4px 4px;
+    border-radius:  0 px 0px 4px 4px;
 }
 .team-item {
     width: calc((100% - 72px) / 4);
