@@ -926,8 +926,8 @@ margin-bottom: 16px;
     margin-top: 0;
 }
 
-..modal-btn-check:hover,
-..modal-btn-check:focus {
+.modal-btn-check:hover,
+.modal-btn-check:focus {
     background: #404BBF;
 }
 
