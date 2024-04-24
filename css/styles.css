@@ -727,11 +727,6 @@ background-color: #404BBF;
     visibility: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.is-open {
-    opacity: 1;
-    visibility: visible;
-    pointer-events: auto;
-}
 
 .modal {
     width: 408px;
@@ -749,6 +744,14 @@ background: #FCFCFC;
 padding: 72px 24px 24px 24px;
 transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+
+
+.is-open {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+}
+
 
 .modal-close-btn {
 position: absolute;
@@ -778,6 +781,10 @@ transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cu
     fill: #FFFFFF;
 }
 
+.modal-title {
+    
+}
+
 
 .modal-title-form {
 font-weight: 500;
@@ -791,7 +798,9 @@ margin-bottom: 16px;
 
 .form-group {
     margin-bottom: 8px;
+    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+
 
 .form-label,
 .form-accept {
@@ -874,7 +883,8 @@ margin-bottom: 16px;
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.form-input-icon:focus + .form-input-icon {
+
+.form-input-icon:focus {
     fill: #4d5ae5;
 }
 
@@ -964,6 +974,7 @@ margin-right: 8px;;
     color: #fff;
     background-color: #4d5ae5;
     border-radius: 4px;
+    border: none;
     padding: 16px 32px;
     min-width: 169px;
     height: 56px;
@@ -980,4 +991,25 @@ margin-right: 8px;;
 .form-send-btn:focus,
 .form-send-btn:active {
 background-color: #404bbf;
+}
+
+.textarea {
+    border: 1px solid rgba(46, 47, 66, 0.4);
+    border-radius: 4px;
+    width: 100%;
+    height: 120px;
+    margin-bottom: 16px;
+    padding: 8px 16px;
+    outline: transparent;
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: 0.04em;
+    color: rgba(46, 47, 66, 0.4);
+    background-color: transparent;
+    resize: none;
+    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.textarea:focus-within {
+    border-color: #4d5ae5;
 }
