@@ -10,6 +10,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 </head>
+
+<!-- ===HEADER=== -->
 <body>
     <header class="header">
         <div class="container header-container">
@@ -17,6 +19,11 @@
         <a href="./index.html" class="header-logo">
             web<span class="header-logo-color">Studio</span>
     </a>
+    <button class="mobile-open-btn" type="button">
+        <svg class="mobile-open-btn-icon" width="16.8px" height="14.4px">
+        <use href="./images/burger.svg#icon-burger"></use>
+    </svg>
+    </button>
             <ul class="header-menu-list">
                 <li class="header-menu-item">
                     <a class="header-menu-link current" href="./index.html">Studio</a></li>
@@ -32,6 +39,9 @@
         </address>
         </div>
     </header>
+
+    <!-- ===SECTION ONE -->
+
     <main class="main">  
     <section class="hero">
         <div class="container">
@@ -39,6 +49,9 @@
             <button type="button" class="hero-btn-main">Order Service</button>
     </div>
     </section>
+
+    <!-- ===SECTION TWO=== -->
+
     <section class="features">
         <div class="container">
         <h2 class="visually-hidden">Features</h2>
@@ -82,6 +95,9 @@
         </ul>
     </div>
     </section>
+
+    <!-- ===SECTION THREE=== -->
+
     <section class="team">
         <div class="container">
         <h2 class="title-team secomd title for title">Our Team</h2>
@@ -237,6 +253,9 @@
         </ul>
     </div>
     </section>
+
+    <!-- ===SECTION FOUR=== -->
+
 <section class="portfolio">
     <div class="container">
 <h2 class="portfolio-title">Our Portfolio</h2>
@@ -319,8 +338,9 @@
 </section>
 </main>
 
-<footer class="footer">
+<!-- ===FOOTER=== -->
 
+<footer class="footer">
 <div class="footer-container">
     <div class="short-call">
         <a href="./index.html" class="footer-logo">Web<span class="footer-accent">Studio</span></a>
@@ -378,6 +398,8 @@
 </div>
 </div>
 </footer>
+
+<!-- ===MODAL OVERLAY=== -->
 
 <div class="backdrop is-open">
 <div class="modal">
@@ -440,5 +462,30 @@ I accept the terms and conditions of the
 </form>
 </div>
 </div>
+<!-- Mobile menu -->
+<div class="mobile-menu">
+    <div class="container mobile-menu-container">
+        <button class="mobile-menu-close-btn">
+<svg class="mobile-menu-close-btn-icon">
+    <use href="./images/iconsmodal.svg#icon-close" width="24" height="24"></use>
+</svg>
+        </button>
+<nav class="mobile-menu-nav">
+<ul class="mobile-menu-list">
+    <li class="mobile-menu-list-item">
+        <a href="" class="mobile-menu-list-link">Studio</a>
+    </li>
+    <li class="mobile-menu-list-item">
+        <a href="" class="mobile-menu-list-link">Portfolio</a>
+    </li>
+    <li class="mobile-menu-list-item">
+        <a href="" class="mobile-menu-list-link">Contacts</a>
+    </li>
+</ul>
+</nav>
+    </div>
+
+</div>
+
 </body>
 </html>
