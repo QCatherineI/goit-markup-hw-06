@@ -252,11 +252,12 @@ display: block;
     padding: 120px 0;
 }
 .features-list {
-    display: flex;
-    gap: 24px;
-    padding-left: 0; 
-    margin: 0;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 72px 24px;
+    justify-content: center;
 }
+
 .features-item {
     align-items: flex-start;
     justify-content: flex-start;

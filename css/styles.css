@@ -1055,6 +1055,38 @@ img {
         
     }
 
+.container-features {
+    display: flex;
+    flex-direction: row;
+        flex-wrap: wrap;
+        gap: 72px 24px;
+        justify-content: space-between;
+}
+
+.features-list {
+
+    display: flex;
+        flex-wrap: wrap;
+        gap: 64px 24px;
+        justify-content: center;
+        align-items: center;
+        width: calc(100% - 24px);
+        margin: 0 auto;
+/*         
+    width: calc(100% - 16px)/2;
+        columns: 2;
+        justify-content: space-around;
+        align-items: center; */
+}
+
+.features-item {
+    /* width: calc(100% - 24px); */
+
+    max-width: calc((100% - 24px) / 2);
+        margin: 0 0;
+}
+    
+
     .features-subtitle {
         font-size: 36px;
         font-style: normal;
@@ -1064,9 +1096,6 @@ img {
         text-align: left;
     }
 
-    .features-subtitle {
-        text-align: left;
-    }
 
     .team-profession,
     .portfolio-text {
@@ -1080,30 +1109,13 @@ img {
         margin: 0 auto 36px auto;
     }
 
-.features-list {
-    display: flex;
-    flex-direction: row;
-        align-items: flex-start;
-        justify-content: flex-start;
-        gap: 72px 24px;
-        row-gap: 72px;
-        column-gap: 24px;
-        flex-wrap: wrap;
-
-    .feature-item {
-        width: calc((100% - 24px) / 2);
-
-    }
 
     .team-list {
-        flex-direction: row;
+        display: flex;
         flex-wrap: wrap;
         gap: 64px 24px;
-        display: flex;
             justify-content: center;
-            flex-direction: column;
             align-items: center;
-            gap: 72px 28px;
             width: calc(100% - 24px);
             margin: 0 auto;
     }
@@ -1114,17 +1126,27 @@ img {
     }
 
 .name-proff {
-    width: calc((100% - 24px) / 2);
-    flex-direction: column;
-    align-items: center;
+    border-radius: 0 0 4px 4px;
+padding: 0px 0px 32px 0px;
+padding: 32px 0;
+
+align-items: center;
+justify-content: center;
+flex-direction: column;
+gap: 8px;
+background-color: #FFFFFF;
 }
 
 
 
     .portfolio-list {
-        flex-direction: row;
-        flex-wrap: wrap;
-        gap: 72px 24px;
+        display: flex;
+            flex-wrap: wrap;
+            gap: 64px 24px;
+            justify-content: center;
+            align-items: center;
+            width: calc(100% - 24px);
+            margin: 0 auto;
     }
 
     .portfolio-item {
