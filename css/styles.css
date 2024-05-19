@@ -1315,14 +1315,11 @@ font-weight: 700;
     letter-spacing: 0.02em;
     text-align: center;
     color: #fff;
-    width: 496px;
-    height: 120px;
-    max-width: 496px;
     padding-top: 188px;
 
     display: block;
-        margin: 0 auto 48px auto;
         padding-top: 188px 0;
+        margin: 0 auto 48px auto;
     }
 
         .hero-btn-main {
@@ -1425,10 +1422,6 @@ font-weight: 700;
         text-align: left;
     }
 
-    .short-call {
-        margin-right: 120px;
-    }
-
 .footer-container {
     padding: 0 15px;
         display: flex;
@@ -1456,4 +1449,9 @@ font-weight: 700;
     font-size: 16px;
     font-weight: 400;
     line-height: 24px;
+}
+
+.footer-subscribe-mail {
+    margin-right: 159px;
+    margin-bottom: 0;
 }
