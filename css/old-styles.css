@@ -216,7 +216,7 @@ display: block;
     line-height: 1.5;
     letter-spacing: 0.04em;
     color: #fff;
-    min-width: 169px;
+    width: fit-content;
     border: none;
     border-radius: 4px;
     cursor: pointer;
