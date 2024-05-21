@@ -26,7 +26,7 @@ ul, ol, li {
     margin: 0;
 }
 
-h1, h2, h4, h5, h6, p {
+h1, h2, h3, h4, h5, h6, p {
     margin: 0;
 }
 
@@ -87,6 +87,7 @@ img {
     letter-spacing: 0.03em;
     text-transform: none;
     color: #4d5ae5;
+    text-transform: uppercase;
     display: inline-block;
     padding: 24px 0;
 }
@@ -293,6 +294,7 @@ width: 280px;
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin: 0 auto;
 }
 
 .section-one {
@@ -306,7 +308,6 @@ width: 280px;
 .hero-title {
     max-width: 216px;
     text-align: center;
-    margin-top: 72px;
     color: #fff;
     font-size: 36px;
     line-height: 1.11;
@@ -396,7 +397,6 @@ width: 280px;
         text-align: center;
         color: #2e2f42;
         letter-spacing: 0.02em;
-        margin-bottom: 8px;
 }
 
 .features-item-title {
@@ -411,6 +411,11 @@ width: 280px;
 
 .section-three {
     background-color: #f4f4fd;
+}
+
+.section-three {
+    padding-top: 96px;
+    padding-bottom: 96px;
 }
 
 .title-team {
@@ -436,7 +441,6 @@ width: 280px;
 }
 
 .team-item {
-    margin-bottom: 72px ;
     width: 264px;
     overflow: hidden;
     background-color: #ffffff;
@@ -447,14 +451,9 @@ width: 280px;
 
 
     .name-proff {
-        display: flex;
-        border-radius: 0 0 4px 4px;
         padding: 32px 0;
-        align-items: center;
-        justify-content: center;
-        flex-direction: column;
-        gap: 8px;
-        background-color: #FFFFFF;
+        text-align: center;
+        
         }
 
 
@@ -614,12 +613,6 @@ position: relative;
 }
 
 
-.short-call {
-    padding-left: 16px;
-    padding-right: 16px;
-    display: flex;
-        flex-direction: column;
-}
 
 .footer-container {
     display: flex;
@@ -653,6 +646,7 @@ position: relative;
     font-weight: normal;
     line-height: 1.5;
     font-size: 16px;
+    max-width: 264px;
 
 }
 
@@ -663,6 +657,7 @@ position: relative;
     letter-spacing: 0.02em;
     color: #ffffff;
     margin-bottom: 16px;
+    left: auto;
 }
 
 .footer-media-list {
@@ -692,7 +687,6 @@ position: relative;
 }
 
 .footer-subscribe-mail {
-    padding-left: 16px;
     padding-right: 16px;
     display: flex;
     flex-direction: column;
@@ -1118,6 +1112,10 @@ position: relative;
         display: none;
     }
 
+.container-hero {
+    margin: 0 auto;
+}
+
 .hero {
     padding: 112px 0;
     max-width: 768px;
@@ -1202,6 +1200,16 @@ position: relative;
     }
 
 
+    .container-our-team {
+        padding-left: 108px;
+        padding-right: 108px;
+    }
+
+.section-three {
+    padding-top: 96px;
+    padding-bottom: 96px;
+}
+
     .team-profession,
     .portfolio-text {
         font-weight: 400;
@@ -1232,16 +1240,18 @@ position: relative;
         margin: 0 auto;
     }
 
-.name-proff {
-    border-radius: 0 0 4px 4px;
-padding: 0px 0px 32px 0px;
-padding: 32px 0;
+        .team__name {
+            font-size: 20px;
+            font-weight: 500;
+            line-height: 1.2;
+            text-align: center;
+            color: #2e2f42;
+            letter-spacing: 0.02em;
+            margin-bottom: 8px;
+        }
 
-align-items: center;
-justify-content: center;
-flex-direction: column;
-gap: 8px;
-background-color: #FFFFFF;
+.name-proff {
+padding: 32px 0;
 }
 
 
@@ -1280,6 +1290,17 @@ background-color: #FFFFFF;
     .footer-text {
         width: 264px;
     }
+
+        .footer-media-title {
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 1.5;
+            letter-spacing: 0.02em;
+            color: #ffffff;
+            margin-bottom: 16px;
+            left: auto;
+        }  
+
 
     .footer-form-mail {
         display: flex;
@@ -1349,11 +1370,7 @@ border-color: #4d5ae5;
 .form-send-btn {
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
-
-
-
-
+ 
 
 }
 
@@ -1427,7 +1444,7 @@ border-color: #4d5ae5;
             padding: 0 15px 0;
     }
 
-.adress {
+.address {
     display: inline;
         font-style: normal;
 }
@@ -1566,7 +1583,6 @@ font-size: 56px;
             border-radius: 4px;
             padding: 16px 32px;
             width: fit-content;
-            margin: 72px;
             
             transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
         }
@@ -1597,6 +1613,14 @@ font-size: 56px;
         width: calc((100% - 72px) / 4);
     }
 
+.features-subtitle {
+    font-weight: 400;
+        font-size: 20px;
+        font-weight: 500;
+        line-height: 1.2;
+        text-align: left;
+}
+
     .features-icons {
         width: 100%;
         display: flex;
@@ -1615,12 +1639,28 @@ font-size: 56px;
         box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
     }
 
+.section-three {
+    padding-top: 120px;
+    padding-bottom: 120px;
+}
+
     .team-list {
         display: flex;
         flex-direction: row;
         flex-wrap: nowrap;
         gap: 24px;
     }
+
+        .team__name {
+            font-size: 20px;
+            font-weight: 500;
+            line-height: 1.2;
+            text-align: center;
+            color: #2e2f42;
+            letter-spacing: 0.02em;
+            margin-bottom: 8px;
+        }
+
 
     .team-profession {
         font-weight: 400;
@@ -1647,16 +1687,13 @@ font-size: 56px;
         transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
     }
 
-    
-    }
 
 .footer {
     background: #2e2f42;
     padding: 100px 0;
     align-items: flex-start;
-    justify-content: flex-start;
     flex-direction: column;
-    gap: 0px;
+    
 }
 
 .footer-container {
@@ -1667,13 +1704,25 @@ font-size: 56px;
 
 
 .short-call {
-        text-align: left;
+    margin-right: auto;
+    left: auto;
 }
 
     .footer-social-media {
-        margin-bottom: 0;
+        margin-right: 120px;
     }
-}
+
+
+
+        .footer-media-title {
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 1.5;
+            letter-spacing: 0.02em;
+            color: #ffffff;
+            margin-bottom: 16px;
+            left: auto;
+        } 
 
 
 .footer-text {
@@ -1681,6 +1730,7 @@ font-size: 56px;
     font-size: 16px;
     font-weight: 400;
     line-height: 24px;
+    max-width: 264px;
 }
 
 .footer-email-text {
@@ -1693,13 +1743,7 @@ font-size: 56px;
     
 }
 
-.footer-subscribe-mail {
-    width: 453px;
-    height: 80px;
-    margin-left: auto;
-}
-
-.modal {
+.modal-is-open {
     width: 408px;
         min-height: 584px;
         padding: 72px 24px 24px 24px;
@@ -1751,8 +1795,5 @@ fill: #FFFFFF;
 .form-send-btn {
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
-
-
 
 }
