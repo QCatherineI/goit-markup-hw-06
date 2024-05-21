@@ -53,11 +53,7 @@ img {
 @media (max-width: 767px) and (min-device-pixel-ratio: 2),
 (min-resolution: 192dpi),
 (min-resolution: 2dppx) {
-    .hero {
-        background-image: linear-gradient(rgba(46, 47, 66, 0.7),
-                rgba(46, 47, 66, 0.7)),
-            url(../images/hero-mob@2x.jpg);
-    }
+    
 
 /* 320px */
 
@@ -226,9 +222,6 @@ background: #fff;
     color: #404bbf;
 }
 
-.mob-menu-adress {
-    margin-bottom: 48px;
-}
 
 .mob-menu-contact-list {
     display: flex;
@@ -237,8 +230,20 @@ background: #fff;
         justify-content: flex-start;
         gap: 24px;
         margin-bottom: 48px;
+        margin-left: 16px;
 }
 
+.mob-menu-contact-item {
+    font-weight: 500;
+        font-size: 20px;
+        line-height: 1.2;
+        letter-spacing: 0.02em;
+        color: #434455;
+}
+
+.address-color {
+    color: #4d5ae5;
+}
 
 .mob-menu-contact-link:hover,
 .mob-menu-contact-link:focus {
@@ -252,7 +257,8 @@ width: 280px;
     justify-content: flex-start;
     align-items: center;
     gap: 40px;
-    margin-left: 0;
+    margin-left: 16px;
+    margin-bottom: 40px;
 }
 
 .mob-menu-social-item {
@@ -799,7 +805,7 @@ position: relative;
 .modal {
     position: absolute;
     top: 30%;
-    left: 50%;
+    left: 40%;
     transform: translate(-50%, -50%);
     width: 288px;
     min-height: 623px;
@@ -1285,11 +1291,70 @@ background-color: #FFFFFF;
     padding-right: 24px;
 }
 
+.footer-subscribe-mail {
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+        justify-content: flex-start;
+        flex-wrap: wrap;
+        column-gap: 0;
+        width: 584px;
+        margin: auto;
+        text-align: left;
+}
+
+
     .modal {
         width: 408px;
         min-height: 584px;
         padding: 72px 24px 24px 24px;
+        transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    position: absolute;
+        top: 25%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background: #fcfcfc;
+        box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 2px 1px rgba(0, 0, 0, 0.2);
+        border-radius: 4px;
+        transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
     }
+
+.modal-close-btn {
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+            border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal-close-icon {
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.contacts-leaving {
+    width: 360px;
+}
+
+.form-input:focus-within {
+border-color: #4d5ae5;
+}
+
+.form-input:focus-within + .modal-icon {
+    fill: #4d5ae5;
+}
+
+.checkspan {
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+            border 250ms cubic-bezier(0.4, 0, 0.2, 1),
+            fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.form-send-btn {
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+
+
+
+
+
 }
 
 @media (min-width: 1158px) {
@@ -1582,11 +1647,7 @@ font-size: 56px;
         transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
     }
 
-    .modal {
-        align-items: baseline;
-        gap: 0;
-        padding-left: 0;
-        text-align: left;
+    
     }
 
 .footer {
@@ -1636,4 +1697,62 @@ font-size: 56px;
     width: 453px;
     height: 80px;
     margin-left: auto;
+}
+
+.modal {
+    width: 408px;
+        min-height: 584px;
+        padding: 72px 24px 24px 24px;
+        transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+.modal-close-btn {
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+            border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal-close-btn:hover,
+.modal-close-btn:focus {
+fill: #FFFFFF;
+}
+
+.modal-close-icon:hover,
+.modal-close-icon {
+    fill: #ffffff;
+}
+
+.modal-close-btn:hover,
+.modal-close-btn:focus {
+    background-color: #404bbf;
+        border: none;
+}
+
+.modal-close-icon {
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.contacts-leaving {
+    width: 360px;
+}
+
+.form-input:focus-within {
+    border-color: #4d5ae5;
+}
+
+.form-input:focus-within+.modal-icon {
+    fill: #4d5ae5;
+}
+
+.checkspan {
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+        border 250ms cubic-bezier(0.4, 0, 0.2, 1),
+        fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.form-send-btn {
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+
+
+
 }
